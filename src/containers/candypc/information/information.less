@@ -1,0 +1,37 @@
+.infoWarp {
+    width: 1280px;
+    overflow: hidden;
+    margin-top: 80px;
+
+    .infoLeftWarp {
+        width: 276px;
+        height: 100%;
+        float: left;
+        background-color: #EFEFEF;
+
+        .infoLsits {
+            li {
+                height: 80px;
+                font-size: 18px;
+                color: #333333;
+                padding-left: 45px;
+                line-height: 80px;
+                cursor: pointer;
+            }
+            .liActive {
+                background-color: #fff;
+                position: relative;
+            }
+            .liActive:before{
+                content: "";
+                width: 5px;
+                height: 80px;
+                background-color: #F98B9F;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    
+}

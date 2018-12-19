@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.main-container{
+  height: 100vh;
+  .header{
+    height: 64px;
+    line-height: 64px;
+    padding-left: 36px;
+    padding-right: 20px;
+    background: #002140;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    .right-msg-box{
+      width: 200px;
+      text-align: right;
+      span{
+        margin-right: 10px;
+      }
+    }
+  }
+ 
+  .sider{
+    height: 100vh;
+    overflow-x: hidden;
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    position: relative;
+    min-width: 240px;
+    width: 10%;
+    z-index: 10;
+    color: #fff;
+    background: #001529;
+    ul{
+      padding: 16px 0px;
+      width: 100%;
+      color: rgba(255,255,255,.65);
+      li{
+        height: 50px;
+        line-height: 50px;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: rgba(255,255,255,.65);
+          display: flex;
+          align-items: center;
+          i{
+            min-width: 14px;
+            width: 25px;
+            margin-right: 10px;
+          }
+          span{
+            height: 100%;
+          }
+        }
+      }
+      .ant-menu-item-selected{
+        background-color: #1890ff;
+        color: #fff;
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .content{
+    background: #f0f2f5;
+    width: 90%;
+  }
+  .content>div{
+    margin: 10px 15px 0px;
+      background: #fff;
+      height: 100vh;
+      padding: 10px;
+  }
+}

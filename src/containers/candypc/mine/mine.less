@@ -1,0 +1,82 @@
+.mineWarp {
+    width: 1280px;
+    overflow: hidden;
+    margin-top: 80px;
+
+    .mineLeftWarp {
+        width: 276px;
+        height: 100%;
+        float: left;
+        background-color: #FAFAFA;
+
+        .mineMsg {
+            height: 235px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin-bottom: 16px;
+            }
+            p {
+                width:100%;
+                font-size: 16px;
+                color: #F98B9F;
+                .userName {
+                     width:100%;
+                     display:flex;
+                     justify-content: center;
+                     align-items:center;
+                    span {
+                        width:40%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis; 
+                        text-align:center;
+                    }                
+                }
+                .isAgent {
+                    width:100%;
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    span {
+                        width:22%;
+                        padding: 0px 5px;
+                        color: rgb(249, 139, 159);
+                        border: 1px solid rgb(249, 139, 159);
+                        border-radius: 60px;
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+        .mineLsits {
+            li {
+                height: 80px;
+                font-size: 18px;
+                color: #333333;
+                padding-left: 45px;
+                line-height: 80px;
+                cursor: pointer;
+            }
+            .liActive {
+                background-color: #fff;
+                position: relative;
+            }
+            .liActive:before{
+                content: "";
+                width: 2px;
+                height: 80px;
+                background-color: #F98B9F;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    
+}

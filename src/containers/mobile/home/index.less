@@ -1,0 +1,143 @@
+@import '../../../assets/css/mobile.less';
+
+.home {
+  min-height: 100vh;
+  height: 100%;
+  background: #fff;
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2{
+      font-family: "PingFangSC";
+      font-size: 0.24rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: #233846;
+      margin: 0 0.08rem 0 0;
+    }
+    img {
+      width: 0.24rem;
+      height: 0.24rem;
+    }
+  }
+
+  .tips{
+    font-size: 0.14rem;
+    font-weight: normal;
+    line-height: 0.25rem;
+    letter-spacing: 0;
+    text-align: justify;
+    color: #697b87;
+  }
+  .container{
+    a{
+      box-sizing: border-box;
+      width: 100%;
+      height: 1.2rem;
+      border-radius: 0.1rem;
+      margin: 0.15rem 0 0.265rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0.1rem;
+
+      .signImg{
+        width: 0.37rem;
+        height: 0.37rem;
+        padding: 0;
+        margin: 0;
+        margin-right: 0.07rem;
+        border-radius: 0.2rem;
+        background-color: #fff;
+      }
+      .singText{
+        padding: 0;
+        margin: 0;
+        width: 2.65rem;
+        display: initial;
+        .title, .countdown{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .comingLine{
+          font-size: 0.15rem;
+        }
+        .overDown{
+          display: flex;
+          justify-content: space-between;
+          p{
+            color: #fff;
+            font-size: 0.12rem;
+            span{
+              font-size: 0.18rem;
+              line-height: 0.18rem;
+              padding-right: 0.1rem;
+            }
+          }
+          .personNumber{
+            font-size: 0.12rem;
+            color: #fff;
+            padding-right: 0.19rem;
+          }
+        }
+        .title{
+          font-size: 0.16rem;
+          line-height: 0.26rem;
+          i{
+            font-size: 0.12rem;
+            display: inline-block;
+            width: 0.6rem;
+            overflow: hidden;
+            white-space: nowrap;
+            vertical-align: middle;
+          }
+        }
+        p{
+          color: #fff;
+          font-size: 0.12rem;
+          margin-bottom: 0.1rem;
+        }
+        .am-progress-outer{
+          background-color: rgba(255,255,255,0.3);
+          height: 0.05rem;
+          padding: 0;
+          margin: 0.16rem 0 0.1rem;
+          .am-progress-bar {
+            padding: 0;
+            margin: 0;
+            border: 0.025rem solid #fff;
+          }
+        }
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 0.05rem;
+        border-radius: 0.03rem;
+        margin-bottom: 0.05rem;
+        background: rgba(255, 255, 255, 0.3);
+
+        .percent {
+          height: 100%;
+          border-radius: 0.03rem;
+          background: #fff;
+        }
+      }
+      .brief {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+  .loading{
+    text-align: center;
+    color:#ccc;
+  }
+}

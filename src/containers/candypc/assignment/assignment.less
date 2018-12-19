@@ -1,0 +1,278 @@
+.assignment-center {
+    margin-top: 80px;
+    width:100%;
+    color:black;
+    margin-top:80px;
+    display:flex;
+    justify-content: center;
+
+    .assignment-content {
+        width:1280px;
+        display:flex;
+        justify-content: space-between;
+
+        .content-left {
+            width:760px;
+            display:flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+
+            .left-top {
+                width:760px;
+                padding-left:17px;
+                border-radius:4px;
+                border:1px solid #EFEFEF;
+                background-color: #fff;
+                padding-bottom: 30px;
+                box-shadow:0px 10px 10px 0px rgba(115,133,182,0.05);
+
+                h1 {
+                   color:#333333;
+                   font-size:16px; 
+                   margin-top:24px;
+                   margin-bottom:34px;
+                }
+
+                // .task-list:hover {
+                //     border-left:5px solid #F98B9F;
+                //     background-color: #EFEFEF;
+                // }
+
+                .task-list {
+                    border-left:5px solid #FFF;
+                    display:flex;
+                    padding:20px 37px;
+                    justify-content: space-between;
+                    align-items: center;
+                    width:720px;
+                    border-bottom:1px solid #E5E5E5;
+                    
+                   .list-left {
+                     width:350px;
+                     display:flex;
+                     align-items:center;
+                     
+                     img {
+                         width: 48px;
+                         height: 48px;
+                     }
+
+                    .symbol-info {
+                        display:flex;
+                        flex-direction: column;
+                        margin-left: 35px;
+
+                        .symbol {
+                            font-size:14px;
+                            color:#333333;
+                            font-family: AppleSystemUIFont;
+                        }
+
+                        .info {
+                            color:#999999;
+                            font-size:12px;
+                            width: 250px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                  } 
+                  .list-right {
+                      display:flex;
+                      align-items:center;
+                      span {
+                        color:#F98B9F;
+                        font-size:14px;
+                      }
+
+                      button {
+                        border:none;
+                        background: linear-gradient(to left, #FE9A8B, #FD868C, #F9748F, #F78CA0);
+                        width:101px;
+                        height:37px;
+                        border-radius:16px;
+                        color:#fff;
+                        font-size:12px;
+                        margin-left:26px;
+                      }
+
+                      .todoTask:hover {
+                        background: linear-gradient(to left, #f97a70, #f17171, #e75e74, #e56e7f );
+                      }
+
+                      .finished,.Completed {
+                          background:#fff;
+                          border:1px solid #c9c9cb;
+                          color:#c9c9cb;
+                      }
+                  }
+                } 
+
+                .task-list {
+                    border-left:5px solid #fff;
+                    background-color:#fff;
+                }
+
+                .active {
+                    border-left:5px solid #F98B9F;
+                    background-color: #EFEFEF;
+                }
+            }
+        }
+
+        .content-right {
+            width:450px;
+            display:flex;
+            flex-direction: column;
+         
+         .right-bottom {
+            width:450px;
+            background:rgba(255,255,255,1);
+            box-shadow: 0px 10px 10px 0px rgba(115, 133, 182, 0.05);
+            border-radius:4px;
+            padding:18px;
+            border:1px solid #EEEEEE;
+
+            .bottom-list {
+                display:flex;
+                flex-direction: column;
+                .list-top {
+                    display:flex;
+                    justify-content: space-between;
+                    border-bottom:1px solid #E5E5E5;
+                    padding-bottom:16px; 
+                    margin-top:30px;
+    
+                    .list-left {
+                        display:flex;
+                        align-items: center;
+    
+                        img {
+                           width:28px;
+                           height:28px; 
+                           margin-right:12px;
+                        }
+    
+                        span {
+                            color:#F98B9F;
+                            font-size:14px;
+                        }
+                    }
+    
+                    .list-right {
+                        display:flex;
+                        align-items:center;
+    
+                        span:nth-child(1) {
+                            color:#333333;
+                            font-size:14px;
+                            margin-right:14px;
+                        }
+    
+                        span:nth-child(2) {
+                            color:#F98B9F;
+                            font-size:14px;
+                        }
+                    }
+                }
+                .list-bottom {
+                    margin-top:32px;
+                    font-size:12px;
+                    color:#666666;
+                    text-align:justify;
+                }
+            }
+         }
+        }
+    }
+}
+
+.ant-modal-content {
+    .taskH1 {
+        color:#000;
+        font-size:25px;
+        margin-top: -30px;
+    }
+    .addCard{
+        height: 174px;
+        background: linear-gradient(to left, #fe9a8b, #fd868c, #f9748f, #f78ca0);
+        box-shadow: 0 10px 10px rgba(253, 134, 115, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        margin-top: 16px;
+        .card{
+            font-size: 20px;
+            line-height: 12px;
+            padding-top: 20.5px;
+            display: block;
+        }
+        .card-detail{
+            display: block;
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 35px;
+        }
+        .copy{
+            width: 140px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(249, 139, 159);
+            border-radius: 22px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -22px;
+            box-shadow: 0 10px 10px rgba(253, 134, 115, 0.3);
+            left: 50%;
+            margin-left: -70px;
+        }
+    }
+
+    .describe{
+        padding-top: 60px;
+        
+        .span_1{
+            font-size: 14px;
+            line-height: 25px;
+            color: rgb(35, 56, 70);
+            margin-bottom: 10px;
+            display: block;
+        }
+        p{
+            line-height: 25px;
+            font-size:20px;
+            color: rgb(35, 56, 70);
+            span{
+                color: rgb(249, 139, 159);
+            }
+        }
+        .p_2{
+            margin-bottom: 10px;
+        }
+        .span_2{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            font-size:20px;
+        }
+        .qrCodebox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .qrCode{
+                width: 335px;
+                height: 103px;
+                margin-top: 15.5px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

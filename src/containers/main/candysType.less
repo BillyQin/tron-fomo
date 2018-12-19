@@ -1,0 +1,61 @@
+.formRow{
+  
+  .ant-form-item{
+    width: 45%;
+    margin: 10px 0;
+    align-items: center;
+    .ant-form-item-label{
+      width: 28%;
+    }
+    .ant-form-item-control-wrapper{
+      width: 50%;
+      .ant-input,.ant-form-item-children,.ant-calendar-picker{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .bgList{
+    width: 100%;
+    .ant-form-item-label{
+      width: 100%;
+      text-align: left;
+    }
+    .ant-form-item-control-wrapper{
+      width: 100%;
+      height: 200px;
+      line-height: 200px;
+      overflow-y: auto;
+      .ant-input,.ant-form-item-children,.ant-calendar-picker{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .ant-form-item:last-child{
+    display: block;
+    text-align: center;
+  }
+}
+.ant-btn.ant-btn-none{
+  display: none;
+}
+.formModal{
+  .ant-row{
+    display: flex;
+  }
+  img{
+    width: 200px;
+    height: 150px;
+  }
+  .ant-row:last-child{
+    .ant-form-item-control-wrapper,.ant-form-item-control,.ant-form-item-children{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .ant-btn-primary,.ant-btn-danger{
+        width: 48%;
+      }
+    }
+  }
+}

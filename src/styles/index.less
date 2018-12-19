@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.28rem;
+  font-weight: normal;
+}
+#root{
+  background-color: #fff;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica,
+  "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB",
+  "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei",
+  "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu{
+  margin:0;padding:0;
+  box-sizing: border-box;
+}
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details{
+  display:block;
+}
+table{
+  border-collapse:collapse;border-spacing:0;
+}
+caption, th{
+  text-align:left;font-weight:normal;
+}
+html, body, fieldset, img, iframe, abbr{
+  border:0;
+}
+i, cite, em, var, address, dfn{
+  font-style:normal;
+}
+[hidefocus], summary{
+  outline:0;
+}
+li{
+  list-style:none;
+}
+h1, h2, h3, h4, h5, h6, small{
+  font-size:100%;
+}
+sup, sub{
+  font-size:83%;
+}
+p {
+  word-break: break-word;
+}
+pre, code, kbd, samp{
+  font-family:inherit;
+}
+q:before, q:after{
+  content:none;
+}
+textarea{
+  overflow:auto;resize:none;
+}
+label, summary{
+  cursor:default;
+}
+a, button{
+  cursor:pointer;
+}
+h1, h2, h3, h4, h5, h6, em, strong, b{
+  font-weight:bold;
+}
+del, ins, u, s, a, a:hover{
+  text-decoration:none;
+}
+body, textarea, input, button, select, keygen, legend{
+  font: 0.24rem/1.14;
+  color:#333;
+  outline:0;}
+body{
+  background:#fff;
+}
+a, a:hover,  a:visited,  a:link,  a:active {
+  text-decoration: none;
+  color:#233846;
+}
+.hidden{
+  display: none;
+}
+/* iphone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and
+(-webkit-device-pixel-ratio: 3) {
+  /*增加头部适配层*/
+  html {
+    height: 100%;
+    box-sizing: border-box;
+    // padding-top: 44px;
+    padding-bottom: 34px;
+    // &:before {
+    //   content: '';
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 44px;
+    //   background-color: #000000;
+    //   z-index: 9998;
+    // }
+    &:after {
+      content: '';
+      z-index: 9998;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 25px;
+      background: #f7f7f8;
+    }
+  }
+}
+

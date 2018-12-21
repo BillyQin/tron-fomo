@@ -5,7 +5,7 @@ import './index.less';
 
 const page = [
   {name: '游戏', link: '/', img: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/game_grey.png', active: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/game_red.png'},
-  {name: '资讯', link: '/information', img: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/group.png', active: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/group-red.png'}, 
+  {name: '指南', link: '/guide', img: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/group.png', active: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/group-red.png'}, 
   {name: '我的', link: '/personal', img: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/personal.png', active: 'https://candytownoss.oss-cn-hangzhou.aliyuncs.com/candytown/personal-red.png'}
 ]
 
@@ -37,7 +37,6 @@ class Footer extends Component {
         this.setState({messListLenght:false})
       }else{
         res.records.map((item,index)=>{
-          
           if(item.readon !== true){
             readonList.push(item)
           }

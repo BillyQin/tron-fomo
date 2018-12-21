@@ -11,6 +11,11 @@ const Home = Loadable({
   loading:Loading
 })
 
+const Guide = Loadable({
+  loader:() => import('@/containers/mobile/guide'),
+  loading:Loading
+})
+
 class Routes extends Component {
   render() {
     return (
@@ -18,6 +23,8 @@ class Routes extends Component {
         <ScrollTop>
           <div>
             <Route exact path="/" component={Home}/>
+            <Route exact path="/guide" component={Guide}/>
+            
           </div>
         </ScrollTop>
       </BrowserRouter>
